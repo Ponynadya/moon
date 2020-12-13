@@ -10,6 +10,7 @@ with open(file_name + '.txt', 'r') as f:
 moon = []
 for _str in raw_moon_data:
     row = []
+    _str = _str.split()
     for symbol in _str:
         row.append(int(symbol))
     moon.append(row)
@@ -54,7 +55,7 @@ def calculate(moon_map):
 print('MOON MAP:')
 for y in moon:
     for x in y:
-        print(x, sep='', end='')
+        print(x, ' ', end='')
     print()
 
 print('Quantity of holes: ', calculate(moon))

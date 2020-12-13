@@ -11,7 +11,7 @@ for i in range(quantity):
     for h in range(height):
         output_string = ''
         for w in range(width):
-            output_string += str(random.randint(0, 1))
+            output_string += str(random.randint(0, 1)) + ' '
         _list.append(output_string)
 
     with open('moon_' + str(i) + '.txt', 'w') as f:
