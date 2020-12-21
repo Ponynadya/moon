@@ -1,4 +1,4 @@
-def calculate(moon_map) -> list:
+def calculate(moon_map: list) -> int:
     """
 
     :param moon_map: 
